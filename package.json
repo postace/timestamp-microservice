@@ -1,17 +1,19 @@
 {
-	"name": "fcc-learn-npm-package-json",
-	"dependencies": {
-		"express": "^4.14.0"
-	},
+	"name": "fcc-timestamp-ms",
+  "version": "0.0.1",
+  "description": "Timestamp microservice formatter",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
 	},
 	"engines": {
-		"node": "4.4.5"
+		"node": "8.1.x"
+	},
+  "dependencies": {
+		"express": "^4.15.3"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://idontknow/todo.git"
+		"url": "https://github.com/postace/timestamp-microservice.git"
 	}
 }
