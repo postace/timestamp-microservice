@@ -5,14 +5,16 @@ const monthsName = ['January', 'February', 'March', 'April', 'May', 'June',
  * Parse a date string and return an object contain format and unix time
  */
 function getDateObject(dateString) {
-  
+  // Check if this dateString only contains number
   let date = new Date(dateString);
   let unix;
   let natural;
   
+  let monthName = monthsName[date.getMonth()];
+  
   if (date !== 'Invalid Date') {
     unix = date.getTime();
-    natural = `${date.getMonth() + 1} ${date.getDate()} ${date.getFullYear()}`;
+    natural = `${monthName} ${date.getDate()} ${date.getFullYear()}`;
   }
   
   return {unix, natural};
