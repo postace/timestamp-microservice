@@ -9,6 +9,8 @@ var fs = require('fs');
 var express = require('express');
 var app = express();
 
+let router = require('./router/index');
+
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
     var allowedOrigins = ['https://narrow-plane.gomix.me', 'https://www.freecodecamp.com'];
@@ -21,6 +23,8 @@ if (!process.env.DISABLE_XORIGIN) {
     next();
   });
 }
+
+app.use('/', router);
 
 app.use('/public', express.static(process.cwd() + '/public'));
 
