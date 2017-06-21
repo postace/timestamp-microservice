@@ -1,4 +1,5 @@
-const monthsName = ['January', ''];
+const monthsName = ['January', 'February', 'March', 'April', 'May', 'June',
+                    'July', 'August', 'September', 'October', 'November', 'December'];
 
 /**
  * Parse a date string and return an object contain format and unix time
