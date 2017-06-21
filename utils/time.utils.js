@@ -19,7 +19,7 @@ function getDateObject(dateString) {
   
   let monthName = monthsName[date.getMonth()];
   
-  if (date !== 'Invalid Date') {
+  if (!isNaN(date)) {
     unix = date.getTime();
     natural = `${monthName} ${date.getDate()} ${date.getFullYear()}`;
   }
