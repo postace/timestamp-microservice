@@ -1,8 +1,10 @@
+const monthsName = ['January', ''];
 
 /**
  * Parse a date string and return an object contain format and unix time
  */
 function getDateObject(dateString) {
+  
   let date = new Date(dateString);
   let unix;
   let natural;
@@ -14,6 +16,8 @@ function getDateObject(dateString) {
   
   return {unix, natural};
 }
+
+
 
 module.exports = {
   getDateObject
